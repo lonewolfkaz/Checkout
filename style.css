@@ -3,6 +3,9 @@ html,body,.wrapper{
     height:100%;
     font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;
 }
+/* * {
+    box-sizing: border-box;
+} */
 
   div {
       display: block;
@@ -16,13 +19,13 @@ html,body,.wrapper{
     font-size: 16px;
   }
   .left{ 
-     background-color:green; 
+     /* background-color:green;  */
      flex-basis:35%;
      padding: 40px 100px 0px 100px; 
      min-height: 100%;
   }
 .left-wrapper {
-    background-color:rgb(214, 213, 133);  
+    /* background-color:rgb(214, 213, 133);   */
     height: 100%;
     max-height: 100vh;
     width: 100%;
@@ -35,11 +38,11 @@ html,body,.wrapper{
 }
 
 .title {
-    background-color: #0070f0;
+    /* background-color: #0070f0; */
+    font-size: 36px;
     height: 45px;
-    width: 250px;
-    color: #fff;
-    margin: 40px 0 20px 0;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 25px 0 20px 0;
 }
 
 .choose-element {
@@ -47,25 +50,54 @@ html,body,.wrapper{
 }
 
 .title-text {
-    background-color: #0070f0;
+    /* background-color: #0070f0; */
+    font-size: 14px;
     height: 21px;
-    width: 226px;
-    color: #fff;
-    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 15px;
 }
 
 .choose {
-    background-color: #1ebe7b;
+    /* background-color: #1ebe7b; */
     height: 32px;
-    width: 215px;
+}
+
+.choose-item {
+    color: #0AC79E;
+    text-decoration: none;
+    padding: 7px 18px;
+    margin-right: 10px;
+}
+.choose-item_selected {
+    border: 1px solid #fefefe;
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    cursor: default;
+    text-decoration: none;
 }
 
 .text-field {
-    background-color: #eb86da;
+    background-color:#0f192e;
+    border: 1px solid #fefefe;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
     height: 32px;
+    padding-left: 10px;
     width: 100%;
     margin-bottom: 14px;
 }
+
+.text-field::placeholder {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.text-field:focus {
+    border: 1px solid #0AC79E;
+    outline: none;
+}
+
 .search-element__help-text {
     background-color: #0070f0;
     height: 42px;
