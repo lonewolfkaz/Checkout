@@ -1,7 +1,8 @@
 html,body,.wrapper{
     background-color:#0f192e;
     height:100%;
-  }
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;
+}
 
   div {
       display: block;
@@ -16,18 +17,109 @@ html,body,.wrapper{
   }
   .left{ 
      background-color:green; 
-     flex-basis:50%;
+     flex-basis:35%;
+     padding: 40px 100px 0px 100px; 
+     min-height: 100%;
   }
+.left-wrapper {
+    background-color:rgb(214, 213, 133);  
+    height: 100%;
+    max-height: 100vh;
+    width: 100%;
+}
+
+.logo {
+    /* background-color:orange; */
+    height: 32px;
+    width: 140px;
+}
+
+.title {
+    background-color: #0070f0;
+    height: 45px;
+    width: 250px;
+    color: #fff;
+    margin: 40px 0 20px 0;
+}
+
+.choose-element {
+    margin-bottom: 20px;
+}
+
+.title-text {
+    background-color: #0070f0;
+    height: 21px;
+    width: 226px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.choose {
+    background-color: #1ebe7b;
+    height: 32px;
+    width: 215px;
+}
+
+.text-field {
+    background-color: #eb86da;
+    height: 32px;
+    width: 100%;
+    margin-bottom: 14px;
+}
+.search-element__help-text {
+    background-color: #0070f0;
+    height: 42px;
+    width: 276px;
+}
+
+.account {
+    margin-bottom: 30px;
+}
+
+.account__title {
+    background-color: #0070f0;
+    height: 20px;
+    width: 284px;
+    margin: 0 0 16px 0;
+}
+
+.account__picker {
+    background-color: #7ce2e6;
+    height: 62px;
+    width: 100%;
+}
+
+.btn {
+    background-color: #0AC79E;
+    height: 40px;
+    width: 100%; 
+    margin-bottom: 14px; 
+}
+
+.help-text {
+    height: 18px;
+    width: 367px;
+}
+
   .right{
-    background-color:orange;  
+    /* background-color:orange;   */
     display: flex;
-    flex-basis: 50%;
+    flex-basis: 65%;
   } 
 
+  @media (max-width: 992px) {
+    .right {
+      display: none;
+    }
+    .left {
+        flex-basis:100%;
+    }
+  }
+
   .right-wrapper {
+      /* background-color: antiquewhite; */
     margin: auto;
     max-width: 430px;
-    background-color: antiquewhite;
   }
 
   .illustration_name_main {
