@@ -94,9 +94,32 @@
 }
 
 .account__picker {
-    background-color: #7ce2e6;
     height: 62px;
     width: 100%;
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.account__picker-item {
+    background-color: #0f192e;
+    flex-basis:50%;
+}
+
+.account__avatar {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-right: 10px;
+}
+
+.account__text {
+    display: inline-block;
+    max-width: 75%;
+    width: 125px;
+    height: 24px;
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .btn-container {
@@ -132,9 +155,6 @@
     background-color: rgba(255, 255, 255, 0.1);;
     color: rgba(255, 255, 255, 0.3);
 }
-
-
-
 
 .help-text {
     height: 18px;
