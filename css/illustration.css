@@ -91,8 +91,6 @@
     box-shadow: 0 0 40px rgba(99,255,221,.2);
 }
 
-
-
 @keyframes q {
     0% {transform: translateY(-20px);}
     100% {transform: translateY(20px);}
