@@ -9,85 +9,94 @@
     <title>Яндекс.Касса: Заявка на подключение</title>
 
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
-    <link rel="stylesheet" href="https://whitepaper.tools/cdn/whitepaper-1.0.0.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/illustration.css">
     <link rel="shortcut icon" href="favicon.ico">
 </head>
 
 <body>
     <div class="wrapper">
         <div class="col left">
-            <div class="left-wrapper">
-                <div class="logo">
+            <div class="form">
+                <div class="form__logo">
                     <img src="img/logo-white.svg">
                 </div>
 
-                <h1 class="title">
+                <h1 class="form__title">
                     Подключение
-                    </h2>
+                </h1>
 
+                <div class="pt-tabs-container">
+                    <p class="title-text">
+                        Где зарегистрирована организация
+                    </p>
+                    <div class="pt-tabs">
+                        <a class="pt-tabs-item pt-tabs-item_selected">
+                            В России
+                        </a>
+                        <a href="#" class="pt-tabs-item">
+                            За рубежом
+                        </a>
+                    </div>
+                </div>
 
-                    <div class="choose-element">
-                        <div>
-                            <p class="title-text">
-                                Где зарегистрирована организация
-                            </p>
+                <div class="pt-tabs-container">
+                    <p class="title-text">
+                        Тип организации
+                    </p>
+                    <div class="pt-tabs">
+                        <a class="pt-tabs-item pt-tabs-item_selected">
+                            Юрлицо
+                        </a>
+                        <a href="#" class="pt-tabs-item">
+                            ИП
+                        </a>
+                    </div>
+                </div>
+
+                <div class="search-element pt-tabs-container">
+                    <p class="title-text">
+                        Название или ИНН компании
+                    </p>
+
+                    <input class="text-field" type="text" placeholder="Например ООО «Яндекс» или 6449013711 ">
+
+                    <div class="search-element__help-text">
+                        Если у вас нет юрлица или ИП, используйте
+                        <br>
+                        <a class="link" href="#">
+                            формы и кнопки Яндекс,Денег
+                        </a>
+                    </div>
+                </div>
+
+                <div class="account">
+                    <div class="account__title-container">
+                        <h2 class="account__title">Выберите аккаунт для Яндекс.Кассы</h2>
+                    </div>
+                    <div class="account__picker">
+                        <div class="account__picker-item">
                         </div>
-                        <div class="choose">
-                            <a class="choose-item choose-item_selected">
-                                В России
-                            </a>
-                            <a href="#" class="choose-item">
-                                За рубежом
-                            </a>
+                        <div class="account__picker-item">
                         </div>
                     </div>
+                </div>
 
-                    <div class="choose-element">
-                        <div class="title-text">
-                            <p class="title-text">
-                                Тип организации
-                            </p>
-                        </div>
-                        <div class="choose">
-                            <a class="choose-item choose-item_selected">
-                                Юрлицо
-                            </a>
-                            <a href="#" class="choose-item">
-                                ИП
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="search-element choose-element">
-                        <div class="title-text">
-                            <p class="title-text">
-                                Название или ИНН компании
-                            </p>
-                        </div>
-
-                        <input class="text-field" type="text" placeholder="Например ООО «Яндекс» или 6449013711 ">
-
-                        <div class="search-element__help-text"></div>
-                    </div>
-
-                    <div class="account">
-                        <div class="account__title"></div>
-                        <div class="account__picker">
-                            <div class="account__picker-item">
-                            </div>
-                            <div class="account__picker-item">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="btn"></div>
-                    <div class="help-text search-element__help-text"></div>
+                <div class="btn-container">
+                    <button class="btn btn_active">
+                        <span>Продолжить</span>
+                    </button>
+                </div>
+                <div class="help-text search-element__help-text">
+                    Вы принимаете
+                    <a class="link" href="#">
+                        условия использования личного кабинета
+                    </a>
+                </div>
 
             </div>
         </div>
-
-
 
         <div class="col right">
             <div class="right-wrapper">
